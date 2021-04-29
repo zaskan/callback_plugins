@@ -1,8 +1,5 @@
----
 - name: test
   hosts: localhost
+  gather_facts: false
   tasks:
-
-    - name: wait
-      pause:
-        seconds: 1
+    - fail:
